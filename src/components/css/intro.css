@@ -1,0 +1,35 @@
+.slider{
+    background: rgb(142, 134, 134);
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);    
+}
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.intro-text{
+    font-size: 3rem;
+}
+
+.hide{
+    background: black;
+    overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
