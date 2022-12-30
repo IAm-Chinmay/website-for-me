@@ -52,7 +52,7 @@ export default function About() {
             <a
               target={"_blank"}
               rel={"noreferrer"}
-              href="https://valorant-info-6969.herokuapp.com/"
+              href="https://know-valorant.netlify.app/"
               style={{ textDecoration: "none", color: "inherit" }}
             >
               {" "}
