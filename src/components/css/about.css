@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: unset;
+  scroll-behavior: smooth;
 }
 
 .content{
@@ -10,7 +12,6 @@
   height: 40vh;
   column-count: 2;
   column-gap: 50px;
-  
 }
 
 .info{
@@ -18,9 +19,14 @@
   display: flex;
   flex-direction: column;
   width: 50%;
+  text-align: center;
   align-items: center;
   justify-content: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.info a{
+  text-decoration: unset;
 }
 
 .info-img{
@@ -30,13 +36,90 @@
 .info-img img{
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   border-radius: 40px;
+  width: 28rem;
+  height: 25.5;
 }
 
 .info-img img:hover{
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+.website_info{
+  margin-top: 18rem;
+  
+  /* background-color: aquamarine; */
+}
+
+.website_info .site_info{
+  margin-top: 2rem;
+  margin-bottom: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: rgb(192, 118, 192); */
+}
+
+.website_info .site_info img {
+  border: solid;
+  /* filter: drop-shadow(); */
+  -webkit-box-shadow: 0px 11px 31px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 31px 5px rgba(0,0,0,0.75);
+box-shadow: 0px 11px 31px 5px rgba(0,0,0,0.75);
+}
+
+.site__mainInfo{
+  height: 10rem;
+  width: 40rem;
+  text-align: start;
+}
+
+.website_info h1{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
 .foot{
   margin-top: 230px;
 }
 
+@media screen and (max-width : 767px) {
+  .content{
+    /* background-color: brown; */
+    overflow: hidden;
+  }
+  .info{
+    width: 50%;
+    height: 28vh;
+    border-radius: 10px;
+    /* background-color: aqua; */
+  }
+
+  .info-img {
+    width: 50%;
+    width: 10rem;
+  height: 10rem;
+    /* background-color: antiquewhite; */
+  }
+
+  .info-img img{
+    width: 10rem;
+  }
+
+
+  .website_info{
+    margin-top: 10rem;
+  }
+
+
+  .website_info .site_info img{
+    height: 10rem;
+    width: 15rem;
+    object-fit: cover;
+  }
+  .website_info .site__mainInfo{
+    /* background-color: aqua; */
+    text-align: center;
+    width: 10rem;
+    object-fit: fill;
+  }
+}
